@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pig Dice</title>
+    <script type="text/javascript" src="d6.js"></script>
+    <script src="js.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="jquery.dice.js"></script>
+    <link rel="stylesheet" href="styles2.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+
+    <!-- <style>
+      body {
+        background-color: black;
+      }
+    </style> -->
+    <script type="text/javascript">
+      $(function() {
+        $("#space").dice();
+        $("#space, .btn-roll").click(function() {
+          $("#space").dice("roll");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sec1 active">
+        <div class="player-name">player 1</div>
+        <div class="player-score">0</div>
+        <div class="current-game">
+          <div class="label">current</div>
+          <div class="score">0</div>
+        </div>
+      </div>
+      <div class="sec2">
+        <div class="player-name">player 2</div>
+        <div class="player-score">0</div>
+        <div class="current-game">
+          <div class="label">current</div>
+          <div class="score">0</div>
+        </div>
+      </div>
+      <div id="space" style="width:200px; height:200px;"></div>
+      <button class="btn-new">New Game</button>
+      <button class="btn-roll">Roll Dice</button>
+      <button class="btn-hold">Hold</button>
+      <div class="input-wrap">
+        <span class="input-wrapp">Score Target:</span>
+        <input
+          type="text"
+          class="score-input"
+          id="finalScoreInput"
+          value="20"
+        />
+      </div>
+    </div>
+  </body>
+</html>

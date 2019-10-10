@@ -1,0 +1,30 @@
+html {
+  min-height: 100%;
+  min-width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/*
+.form-control {
+  display: inline-block;
+  margin-right: 100px;
+}*/
+form {
+  margin-top: 260px;
+}
+.but {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+@media (max-width: 978px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    padding: 0;
+  }
+}
