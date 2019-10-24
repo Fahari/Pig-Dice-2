@@ -1,11 +1,24 @@
 html {
   min-width: 100%;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: Lato;
+  margin: 0;
+  padding: 0;
 }
-
+#dice_diceGroup_0 {
+  /* background-color: aqua; */
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+/* #dice1,
+#dice2 {
+  z-index: 30;
+} */
 .wrapper {
   width: 90%;
   position: absolute;
@@ -94,7 +107,7 @@ button:hover i {
 .btn-new:focus {
   outline: none;
 }
-.btn-roll:focus {
+#dicebutton:focus {
   outline: none;
 }
 .btn-hold:focus {
@@ -113,13 +126,13 @@ i {
 }
 
 .btn-new {
-  top: 145px;
+  top: 100px;
 }
 .btn-roll {
-  top: 303px;
+  top: 315px;
 }
 .btn-hold {
-  top: 367px;
+  top: 390px;
 }
 
 .input-wrap {
@@ -130,7 +143,7 @@ i {
   text-align: center;
 }
 .score-input {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 100;
   width: 100px;
   text-align: center;
@@ -140,19 +153,58 @@ i {
   text-transform: uppercase;
   margin-bottom: 5px;
   font-weight: 100;
+  font-size: 15px;
 }
 
-.die {
-  width: 70px;
-  height: 70px;
+#dice1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-top: 250px;
+  margin-left: 30px;
+
+  left: 478px;
 }
-#space {
+#dice2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-top: 250px;
+  margin-left: 30px;
+
+  left: 568px;
+}
+#dicebutton {
+  position: absolute;
+  width: 200px;
+  /* top: 370px; */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
+  background: none;
+  border: none;
+  font-family: Lato;
+  font-size: 20px;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+  font-weight: 300;
+  transition: background-color 0.5s, color 0.5s;
+  overflow: hidden;
+}
+#dicebutton:hover {
+  font-weight: 600;
+}
+#dicebutton:hover i {
+  margin-right: 20px;
+}
+
+/* #space {
   top: 150px;
   position: absolute;
   left: 41%;
-}
+} */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .sec1,
   .sec2 {
     width: 50%;
@@ -176,8 +228,8 @@ i {
   .btn-new {
     top: 70px;
   }
-  .btn-roll {
-    top: 260px;
+  #dicebutton {
+    top: 460px;
   }
   .btn-hold {
     top: 327px;
@@ -195,13 +247,16 @@ i {
     font-weight: 100;
     width: 70px;
   }
-  #space {
-    top: 80px;
-    position: absolute;
-    left: 18.5%;
-  }
+
   .die {
     width: 40px;
     height: 40px;
+    top: 360px;
+    left: 39%;
   }
-}
+} */
+/* #space {
+    top: 80px;
+    position: absolute;
+    left: 18.5%;
+  }*/
